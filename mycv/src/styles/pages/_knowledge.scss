@@ -1,0 +1,406 @@
+.knowledge {
+    .knowledgeContent {
+        min-height: $minHeight;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 38% 1fr 1fr;
+        grid-template-rows: 70% 30%;
+        grid-template-areas:
+            "L L O O"
+            "S S S S";
+
+            @media screen and (max-width: 968px) {
+                min-height: $minHeight;
+                width: 97vw;
+                position: relative;
+                overflow: hidden;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 60% 1fr 1fr;
+                grid-template-areas:
+                    "L"
+                    "O"
+                    "S";
+            }
+
+        @media screen and (max-width: 437px) {
+            min-height: $minHeight;
+            width: 99vw;
+            position: relative;
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 60% 1fr 1fr;
+            grid-template-areas:
+                "L"
+                "O"
+                "S";
+        }
+
+        @media screen and (max-width: 658px) {
+            min-height: $minHeight;
+            width: 97vw;
+            position: relative;
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 60% 1fr 1fr;
+            grid-template-areas:
+                "L"
+                "O"
+                "S";
+        }
+
+        .mainTechnicalSkills,
+        .otherTechnicalSkills,
+        .softSkills {
+            background: $color-2;
+            border-radius: $borderRadius;
+            box-shadow: 3px 3px 3px $black;
+            padding: 0.5rem;
+
+            @media screen and (max-width: 411px) {
+                padding: 0;
+            }
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            font-family: $font-1;
+            color: $color-5;
+            text-transform: uppercase;
+            text-shadow: 1px 3px 1px $black;
+
+            @media screen and (max-width: 650px) {
+                margin-bottom: 1rem;
+            }
+            
+        }
+
+        .mainTechnicalSkills {
+            grid-area: L;
+            margin-bottom: 0.3rem;
+            margin-right: 0.3rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+                "L F"
+                "M D";
+
+            @media screen and (max-width: 437px) {
+                grid-area: L;
+                margin-bottom: 0.3rem;
+                margin-right: 0.3rem;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                grid-template-areas:
+                    "L"
+                    "F"
+                    "M" 
+                    "D";
+            }
+
+            @media screen and (max-width: 396px) {
+                width: 96vw;
+            }
+
+            &:hover {
+                transform: translate(3px, 3px);
+            }
+
+            .languagesDisplay {
+                grid-area: L;
+                margin-right: 1.5rem;
+                margin-left: 1rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .frameworksDisplay {
+                grid-area: F;
+                margin-right: 1.5rem;
+                margin-bottom: 1.5rem;
+
+                @media screen and (max-width: 437px) {
+                    margin-left: 1rem;
+                    margin-right: 1.8rem;
+                }
+            }
+
+            .databasesDisplay {
+                grid-area: D;
+                margin-right: 1.5rem;
+                margin-bottom: 1.5rem;
+
+                @media screen and (max-width: 437px) {
+                    margin-left: 1rem;
+                    margin-right: 1.8rem;
+                }
+
+                .months {
+                    font-size: 0.65rem;
+                    display: flex;
+                    justify-content: space-between;
+                    color: $white;
+
+                    span {
+                        width: 36%;
+                        margin-bottom: 0.25rem;
+
+
+                        &:nth-child(2) {
+                            text-align: right;
+                            width: 20%;
+    
+                        }
+                        &:nth-child(3) {
+                            text-align: right;
+                            width: 40%;
+
+                        }
+                        &:nth-child(2):before,
+                        &:nth-child(3):before {
+                            content: "";
+                            background: rgba(180, 179, 179, 0.507);
+                            position: absolute;
+                            height: 40px;
+                            width: 1px;
+                            transform: translate(9px, 19px);
+                        }
+                    }
+                }
+            }
+
+            .methodologiesDisplay {
+                grid-area: M;
+                margin-right: 1.5rem;
+                margin-left: 1rem;
+                margin-bottom: 1.5rem;
+
+                @media screen and (max-width: 437px) {
+                    margin-left: 1rem;
+                    margin-right: 1.8rem;
+                }
+                
+
+                .months {
+                    font-size: 0.65rem;
+                    display: flex;
+                    justify-content: space-between;
+                    color: $white;
+
+                    span {
+                        width: 36%;
+                        margin-bottom: 0.25rem;
+
+                        &:nth-child(2) {
+                            text-align: right;
+                            width: 20%;
+                        }
+                        &:nth-child(3) {
+                            text-align: right;
+                            width: 40%;
+                        }
+                        &:nth-child(2):before,
+                        &:nth-child(3):before {
+                            content: "";
+                            background: rgba(180, 179, 179, 0.507);
+                            position: absolute;
+                            height: 142px;
+                            width: 1px;
+                            transform: translate(9px, 19px);
+                        }
+                    }
+                }
+            }
+
+            h3 {
+                margin-bottom: 0.5rem;
+            }
+
+            .months {
+                font-size: 0.65rem;
+                display: flex;
+                justify-content: space-between;
+                color: $white;
+
+                span {
+                    width: 36%;
+                    margin-bottom: 0.25rem;
+
+                    &:nth-child(2) {
+                        text-align: right;
+                        width: 20%;
+                    }
+                    &:nth-child(3) {
+                        text-align: right;
+                        width: 40%;
+                    }
+
+                    &:nth-child(2):before,
+                    &:nth-child(3):before {
+                        content: "";
+                        background: rgba(180, 179, 179, 0.507);
+                        position: absolute;
+                        height: 175px;
+                        width: 1px;
+                        transform: translate(9px, 19px);
+                    }
+                }
+            }
+
+            .languagesList {
+                padding-top: 0.5rem;
+
+                li {
+                    color: black;
+                    font-size: 0.9rem;
+
+                    @media screen and (max-width: 1125px) {
+                        font-size: 0.75rem;
+                    }
+                }
+
+                .progressBar {
+                    height: 0.3rem;
+                    background: transparent;
+                    border-radius: 50px;
+                    margin-top: 0.2rem;
+                    position: relative;
+
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        background: $color-3;
+                        border-radius: 50px;
+                        height: 0.3rem;
+                        width: 0;
+                        animation: line 2s ease-out forwards;
+
+                        @keyframes line {
+                            to {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.otherTechnicalSkills {
+    grid-area: O;
+    margin-right: 0.5rem;
+    margin-bottom: 0.3rem;
+
+    @media screen and (max-width: 396px) {
+        width: 96vw;
+    }
+
+    &:hover {
+        transform: translate(3px, 3px);
+    }
+
+    h3 {
+        margin-left: 1rem;
+    }
+
+    .list {
+        display: flex;
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        padding-right: 0;
+
+
+        ul {
+            height: 80%;
+            display: grid;
+            margin-right: 3rem;
+            margin-left: 0.2rem;
+
+            li {
+                color: black;
+                font-size: 1rem;
+                padding-right: 1rem;
+
+                @media screen and (max-width: 1076px) {
+                    font-size: 0.9rem;
+                }
+
+                @media screen and (max-width: 1024px) {
+                    font-size: 0.8rem;
+                }
+
+                i {
+                    color: $color-5;
+                }
+            }
+        }
+    }
+}
+
+.softSkills {
+    grid-area: S;
+    margin-right: 0.5rem;
+    margin-bottom: 0.3rem;
+
+    @media screen and (max-width: 396px) {
+        width: 96vw;
+    }
+
+    &:hover {
+        transform: translate(3px, 3px);
+    }
+
+    h3 {
+        margin-left: 1rem;
+    }
+
+    .skillList {
+        display: flex;
+        grid-row-end: 10;
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        justify-content: space-evenly;
+
+        ul {
+            height: 80%;
+            display: grid;
+
+            li {
+
+                @media screen and (max-width: 437px) {
+                    margin-left: 1rem;
+                    margin-right: 1rem;
+                }
+
+                i {
+                    color: $color-5;
+                }
+
+                span {
+                    color: black;
+
+                    @media screen and (max-width: 968px) {
+                        font-size: .9rem;
+                    }
+
+                    @media screen and (max-width: 650px) {
+                        font-size: .9rem;
+                    }
+
+                    @media screen and (max-width: 368px) {
+                        font-size: .8rem;
+                    }
+                }
+            }
+        }
+    }
+}

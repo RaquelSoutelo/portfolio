@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+$font-1:'Itim', cursive;
+
+$color-1:#4A010F;
+$color-2:#96031E;
+$color-3:#C90428;
+$color-4:#8C2D3E;
+$color-5:#E34965;
+$white: #ddd;
+$black: #333;
+
+$borderRadius: 25px;
+$shadow: 0 1px 3px #333;
+$minHeight: 95vh;
+
+@mixin verticalCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: .2rem auto;
+    max-width: 1200px;
+    font-family: $font-1;
+    color: black;
+}
+
+button {
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.home, .knowledge, .background, .portfolio, .contact {
+    display: flex;
+
+    @media screen and (max-width: 850px) {
+        display: block !important;
+    }
+}
+
+.homeContent, .knowledgeContent, .backgroundContent, .portfolioContent, .contactContent {
+    margin-left: .4rem;
+
+    @media screen and (max-width: 850px) {
+        margin-left: 0 !important;
+    }
+}

@@ -1,0 +1,191 @@
+.home {
+  .homeContent {
+    background: linear-gradient(80deg, $color-1 10%, transparent 100%);
+    min-height: $minHeight;
+    width: 100%;
+    min-height: 500px;
+    border-radius: $borderRadius;
+    box-shadow: 3px 3px 3px $black;
+    position: relative;
+    overflow: hidden;
+
+  
+    @media screen and (max-width: 438px) {
+      background: linear-gradient(80deg, $color-1 5%, transparent 100%);
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: inherit;
+      background: url("../../media/me_background.jpg") no-repeat center/cover;
+      z-index: -1;
+      filter: brightness(80%);
+
+      @media screen and (max-width: 438px) {
+        filter: brightness(100%);
+      }
+    }
+
+    @media screen and (max-width: 850px) {
+      width: 99vw;
+    }
+
+    @media screen and (max-width: 438px) {
+      width: 98vw;
+    }
+
+    .content {
+      position: absolute;
+      top: 0;
+      left: 15%;
+      font-family: $font-1;
+
+      @media screen and (max-width: 850px) {
+        left: 20%;
+      }
+
+      @media screen and (max-width: 718px) {
+        left: 10%;
+      }
+
+      h1 {
+        font-size: 5rem;
+        font-family: $font-1;
+        color: $color-5;
+        text-transform: uppercase;
+        text-shadow: 2px 3px 2px $black;
+
+        @media screen and (max-width: 1044px) {
+          font-size: 4rem;
+        }
+
+        @media screen and (max-width: 583px) {
+          left: 20%;
+          font-size: 3rem;
+        }
+
+        @media screen and (max-width: 438px) {
+          font-size: 2rem;
+        }
+      }
+
+      h2 {
+        font-size: 2.5rem;
+        padding: 1.5rem 0 2.5rem;
+        color: $color-3;
+        text-shadow: 1px 2px 1px $black;
+
+        @media screen and (max-width: 1044px) {
+          font-size: 2rem;
+        }
+
+        @media screen and (max-width: 583px) {
+          left: 20%;
+          font-size: 1.4rem;
+        }
+
+        @media screen and (max-width: 437px) {
+          color: $color-5;
+          padding-top: 0.2rem;
+        }
+      }
+    }
+
+    .text {
+      position: absolute;
+      top: 35%;
+      left: 65%;
+      padding-right: 1.5rem;
+      font-family: $font-1;
+      text-align: justify;
+      text-justify: inter-word;
+
+      p {
+        font-size: 1rem;
+        padding: 0.5rem 0 2.5rem;
+        color: $color-5;
+        text-shadow: 1px 2px 1px $black;
+      }
+    }
+    .cv-content {
+      position: absolute;
+      top: 85%;
+      left: 5%;
+      font-family: $font-1;
+
+      .cv {
+        a {
+          display: flex;
+          font-size: 1.5rem;
+          background: $color-5;
+          color: $color-1;
+          padding: 1rem 2rem;
+          border-radius: $borderRadius;
+          box-shadow: 1px 2px 1px $black;
+          transition: 0.2s ease;
+
+          @media screen and (max-width: 1044px) {
+            font-size: 1rem;
+          }
+
+          &:hover {
+            background: $color-1;
+            color: $color-5;
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1044px) {
+  .homeContent {
+    margin: 0 0.2rem 0 0.2rem !important;
+
+    .text {
+      display: none;
+    }
+
+    .cv-content {
+      .cv {
+        a {
+          padding: 0 2rem 1rem !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .homeContent {
+    &:after {
+      background: url("../../media/me_background.jpg") no-repeat 60% 50% / cover !important;
+    }
+
+    .text {
+      display: none;
+    }
+    .content {
+      .cv-content {
+        padding: 1rem 1rem 1rem 1rem !important;
+
+        .cv {
+          a {
+            padding: 2rem 2rem;
+          }
+        }
+      }
+
+      h1 {
+        font-size: 3rem !important;
+      }
+
+      h2 {
+        font-size: 1.8rem !important;
+      }
+    }
+  }
+}

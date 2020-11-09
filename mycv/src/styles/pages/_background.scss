@@ -1,0 +1,308 @@
+.background {
+    .backgroundContent {
+        min-height: $minHeight;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 38% 1fr 1fr;
+        grid-template-rows: 55% 40% 5%;
+        grid-template-areas:
+            "E P P"
+            "C C L"
+            ". . .";
+
+        @media screen and (max-width: 1021px) {
+            min-height: $minHeight;
+            width: 100vw;
+            position: relative;
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-areas:
+                "E"
+                "P"
+                "C"
+                "L";
+        }
+
+        .experience,
+        .languages,
+        .education,
+        .certifications {
+            background: $color-2;
+            border-radius: $borderRadius;
+            box-shadow: 3px 3px 3px $black;
+            
+
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            font-family: $font-1;
+            color: $color-5;
+            text-transform: uppercase;
+            text-shadow: 1px 3px 1px $black;
+
+            @media screen and (max-width: 1021px) {
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+
+.experience {
+    grid-area: P;
+    margin: 2rem 1rem 0.5rem 0.5rem;
+
+    @media screen and (max-width: 1022px) {
+        margin-top: 0.2rem;
+    }
+
+    @media screen and (max-width: 437px) {
+        margin-top: 0.2rem;
+    }
+
+    @media screen and (max-width: 360px) {
+        margin-top: 0.2rem;
+    }
+
+    &:hover {
+        transform: translate(3px, 3px);
+    }
+
+    h3 {
+        margin-left: 1rem;
+    }
+
+    .experienceList {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        margin-left: 1rem;
+        margin-bottom: 0.5rem;
+        margin-right: 1rem;
+
+        ul {
+            height: 80%;
+            display: grid;
+            margin-right: 1rem;
+            
+
+            li {
+                i {
+                    color: $color-5;
+                    margin-right: 0.2rem;
+                }
+
+                .title {
+                    font-size: 0.8rem;
+                    color: black;
+
+                    @media screen and (max-width: 1095px) {
+                        font-size: 0.8rem;
+                    }
+
+                    @media screen and (max-width: 495px) {
+                        font-size: 0.7rem;
+                    }
+                }
+
+                .years {
+                    font-size: 0.5rem;
+                    color: $color-1;
+                    padding-bottom: 0.2rem;
+
+                    @media screen and (max-width: 1095px) {
+                        font-size: 0.6rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.education {
+    grid-area: E;
+    margin: 2rem 0 0.5rem 0.5rem;
+
+    @media screen and (max-width: 1022px) {
+        margin-top: 0.2rem;
+        margin-right: 1rem;
+        margin-bottom: 0.2rem;
+    }
+
+    @media screen and (max-width: 437px) {
+        margin-top: 0.2rem;
+    }
+
+    @media screen and (max-width: 360px) {
+        margin-top: 0.2rem;
+    }
+
+    &:hover {
+        transform: translate(3px, 3px);
+    }
+
+    h3 {
+        margin-left: 1rem;
+    }
+
+    .educationList {
+        display: flex;
+        grid-row-end: 10;
+        width: 100%;
+        height: 100%;
+        margin-left: 1rem;
+        margin-bottom: 0.5rem;
+        margin-right: 1rem;
+
+        ul {
+            height: 80%;
+            display: grid;
+            margin-right: 1rem;
+
+            li {
+                i {
+                    color: $color-5;
+                    margin-right: 0.2rem;
+                }
+
+                .school {
+                    font-size: 1rem;
+                    color: black;
+
+                    @media screen and (max-width: 1095px) {
+                        font-size: 0.8rem;
+                    }
+                }
+
+                .schoolYears {
+                    font-size: 0.7rem;
+                    color: $color-1;
+                    padding-bottom: 0.2rem;
+
+                    @media screen and (max-width: 1095px) {
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.languages {
+    grid-area: L;
+    margin: 1.5rem 1rem 0.5rem 0.5rem;
+
+    @media screen and (max-width: 1022px) {
+        margin-top: 0.2rem;
+    }
+
+    @media screen and (max-width: 437px) {
+        margin-top: 0.2rem;
+    }
+
+    @media screen and (max-width: 360px) {
+        margin-top: 0.2rem;
+    }
+
+    &:hover {
+        transform: translate(3px, 3px);
+    }
+
+    h3 {
+        margin-left: 1rem;
+    }
+
+    .languagesList {
+        display: flex;
+        grid-row-end: 10;
+        width: 100%;
+        height: 100%;
+        margin-left: 1rem;
+        margin-bottom: 0.5rem;
+        margin-right: 1rem;
+
+        ul {
+            height: 80%;
+            display: grid;
+            margin-right: 1rem;
+
+            li {
+                padding-bottom: 1rem;
+                i {
+                    color: $color-5;
+                    margin-right: 0.2rem;
+                }
+
+                .language {
+                    font-size: 0.8rem;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+.certifications {
+    grid-area: C;
+    margin: 0 0 0.5rem 0.5rem;
+
+    @media screen and (max-width: 1022px) {
+        margin-right: 1rem;
+    }
+
+    &:hover {
+        transform: translate(3px, 3px);
+    }
+
+    h3 {
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .certificationsList {
+        display: flex;
+        grid-row-end: 10;
+        width: 100%;
+        height: 100%;
+        margin-left: 1rem;
+        margin-bottom: 0.5rem;
+        margin-right: 1rem;
+
+        ul {
+            height: 80%;
+            display: grid;
+            margin-right: 1rem;
+
+            li {
+                i {
+                    color: $color-5;
+                    margin-right: 0.2rem;
+                }
+
+                .certificate {
+                    font-size: 0.9rem;
+                    color: black;
+
+                    @media screen and (max-width: 1095px) {
+                        font-size: 0.8rem;
+                    }
+                }
+
+                .year {
+                    font-size: 0.7rem;
+                    color: $color-1;
+                    padding-bottom: 0.2rem;
+
+                    @media screen and (max-width: 1095px) {
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+        }
+    }
+}

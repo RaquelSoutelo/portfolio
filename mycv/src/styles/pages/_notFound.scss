@@ -1,0 +1,68 @@
+.notFound {
+  @include verticalCenter;
+  display: flex;
+  height: 95vh;
+  max-width: 1200px;
+  margin-top: 1rem;
+  background: url("../../media/me_notFound.jpg") no-repeat center/cover;
+  border-radius: $borderRadius;
+  box-shadow: 3px 3px 3px $black;
+  text-align: center;
+
+  @media screen and (max-width: 437px) {
+    min-height: $minHeight;
+    width: 99vw;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60% 1fr 1fr;
+    grid-template-areas:
+      "L"
+      "O"
+      "S";
+  }
+
+  @media screen and (max-width: 330px) {
+    height: 98%;
+  }
+
+  .notFoundContent {
+    box-sizing: border-box;
+    background-color: $color-4;
+    width: 30%;
+    border: 2.5px solid $color-1;
+    border-radius: $borderRadius;
+    box-shadow: 3px 3px 3px $black;
+    float: left;
+
+    @media screen and (max-width: 437px) {
+      width: 40%;
+      margin-left: 130px;
+      margin-top: 200px;
+    }
+
+    @media screen and (max-width: 330px) {
+      width: 50%;
+      margin-left: 80px;
+    }
+  }
+
+  h1 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+
+  a {
+    padding: 1rem 2rem;
+    border-radius: $borderRadius;
+    background: $color-5;
+    transition: 0.2s;
+    color: $color-1;
+
+    &:hover {
+      background: $color-1;
+      color: $color-5;
+    }
+  }
+}
