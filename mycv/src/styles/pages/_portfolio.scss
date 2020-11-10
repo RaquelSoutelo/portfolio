@@ -138,6 +138,11 @@
                 border-radius: 4px;
                 cursor: pointer;
                 @include verticalCenter;
+
+                @media screen and (max-width: 520px) {
+                    width: 100%;
+                    object-fit: scale-down;
+                }
             }
 
             .info {
