@@ -22,7 +22,7 @@ export const portfolioData = [
     name: 'Raquel Soutelo - CV',
     languages: ['all', 'html', 'css', 'javascript', 'react'],
     languagesIcons: ['fab fa-html5', 'fab fa-css3-alt', 'fab fa-js', 'fab fa-react'],
-    source: 'https://github.com/RaquelSoutelo/portfolio',
+    source: 'https://github.com/RaquelSoutelo/portfolio/tree/master/mycv',
     info: 'A website created to display a dynamic CV in a single page application. It was made after the bootcamp, using React, JavaScript, HTML and Sass.',
     picture: './media/website.png'
   },

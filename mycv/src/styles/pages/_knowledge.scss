@@ -11,19 +11,19 @@
             "L L O O"
             "S S S S";
 
-            @media screen and (max-width: 968px) {
-                min-height: $minHeight;
-                width: 97vw;
-                position: relative;
-                overflow: hidden;
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: 60% 1fr 1fr;
-                grid-template-areas:
-                    "L"
-                    "O"
-                    "S";
-            }
+        @media screen and (max-width: 968px) {
+            min-height: $minHeight;
+            width: 97vw;
+            position: relative;
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 60% 1fr 1fr;
+            grid-template-areas:
+                "L"
+                "O"
+                "S";
+        }
 
         @media screen and (max-width: 437px) {
             min-height: $minHeight;
@@ -77,7 +77,6 @@
             @media screen and (max-width: 650px) {
                 margin-bottom: 1rem;
             }
-            
         }
 
         .mainTechnicalSkills {
@@ -101,7 +100,7 @@
                 grid-template-areas:
                     "L"
                     "F"
-                    "M" 
+                    "M"
                     "D";
             }
 
@@ -151,16 +150,13 @@
                         width: 36%;
                         margin-bottom: 0.25rem;
 
-
                         &:nth-child(2) {
                             text-align: right;
                             width: 20%;
-    
                         }
                         &:nth-child(3) {
                             text-align: right;
                             width: 40%;
-
                         }
                         &:nth-child(2):before,
                         &:nth-child(3):before {
@@ -185,7 +181,6 @@
                     margin-left: 1rem;
                     margin-right: 1.8rem;
                 }
-                
 
                 .months {
                     font-size: 0.65rem;
@@ -317,7 +312,6 @@
         margin: 0 auto;
         padding-right: 0;
 
-
         ul {
             height: 80%;
             display: grid;
@@ -375,7 +369,6 @@
             display: grid;
 
             li {
-
                 @media screen and (max-width: 437px) {
                     margin-left: 1rem;
                     margin-right: 1rem;
@@ -389,15 +382,15 @@
                     color: black;
 
                     @media screen and (max-width: 968px) {
-                        font-size: .9rem;
+                        font-size: 0.9rem;
                     }
 
                     @media screen and (max-width: 650px) {
-                        font-size: .9rem;
+                        font-size: 0.9rem;
                     }
 
                     @media screen and (max-width: 368px) {
-                        font-size: .8rem;
+                        font-size: 0.8rem;
                     }
                 }
             }

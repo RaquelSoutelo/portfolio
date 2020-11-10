@@ -15,7 +15,7 @@ const ProfessionalBackgroundAndEducation = () => {
                 <Certifications />
                 <Languages />
             </div>
-            
+
         </div>
     );
 };

@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
 
-$font-1:'Itim', cursive;
+$font-1: "Itim", cursive;
 
-$color-1:#4A010F;
-$color-2:#96031E;
-$color-3:#C90428;
-$color-4:#8C2D3E;
-$color-5:#E34965;
+$color-1: #4a010f;
+$color-2: #96031e;
+$color-3: #c90428;
+$color-4: #8c2d3e;
+$color-5: #e34965;
 $white: #ddd;
 $black: #333;
 
@@ -17,7 +17,7 @@ $minHeight: 95vh;
 @mixin verticalCenter {
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
 }
 
 * {
@@ -27,7 +27,7 @@ $minHeight: 95vh;
 }
 
 body {
-    margin: .2rem auto;
+    margin: 0.2rem auto;
     max-width: 1200px;
     font-family: $font-1;
     color: black;
@@ -47,7 +47,11 @@ a {
     cursor: pointer;
 }
 
-.home, .knowledge, .background, .portfolio, .contact {
+.home,
+.knowledge,
+.background,
+.portfolio,
+.contact {
     display: flex;
 
     @media screen and (max-width: 850px) {
@@ -55,8 +59,12 @@ a {
     }
 }
 
-.homeContent, .knowledgeContent, .backgroundContent, .portfolioContent, .contactContent {
-    margin-left: .4rem;
+.homeContent,
+.knowledgeContent,
+.backgroundContent,
+.portfolioContent,
+.contactContent {
+    margin-left: 0.4rem;
 
     @media screen and (max-width: 850px) {
         margin-left: 0 !important;

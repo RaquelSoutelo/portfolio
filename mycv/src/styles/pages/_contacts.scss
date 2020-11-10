@@ -30,7 +30,6 @@
         width: 50%;
         min-width: 440px;
         min-height: 200px;
-        
 
         @media screen and (max-width: 1121px) {
             width: 40%;
@@ -76,7 +75,6 @@
             @media screen and (max-width: 320px) {
                 padding-left: 3.5rem;
             }
-    
 
             &:after {
                 content: "";
@@ -90,7 +88,6 @@
 
                 @media screen and (max-width: 320px) {
                     margin-left: 1.8rem;
-                    
                 }
             }
         }
@@ -127,9 +124,8 @@
                 transition: 0.2s ease;
 
                 @media screen and (max-width: 420px) {
-                    font-size: .8rem !important;
+                    font-size: 0.8rem !important;
                 }
-
             }
 
             .clickInput:hover {
@@ -169,4 +165,3 @@
         }
     }
 }
-
